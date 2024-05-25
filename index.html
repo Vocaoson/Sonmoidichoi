@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <h1 style="color: blue;text-align: center;">Chào mừng em đến trang mời đi chơi.</h1>
+    <p style="color: red; text-align: center;">Chọn những options tương ứng để chuyến đi vui vẻ hơn</p>
+
+    <form onsubmit="vaohangdoi()" action="/xulylogic">
+        <div style="background-color: green; height: 500px;">
+            <!-- Dress code -->
+            <label for="dress-code">Chọn Dress code:</label>
+
+            <select name="dress-code" id="dress-code">
+                <option value="black">Đen</option>
+                <option value="blue">Xanh dương</option>
+                <option value="red">Đỏ</option>
+            </select>
+            <br>
+            <!-- Xe -->
+            <label for="loai-xe">Chọn loại xe:</label>
+
+            <select name="loai-xe" id="loai-xe">
+                <option value="luxa">Luxa</option>
+                <option value="sonet">Sonet</option>
+                <option value="wave">Wave</option>
+            </select>
+            <br>
+            <!-- Loại chơi -->
+            <label for="loai-choi">Chọn loại chơi:</label>
+
+            <select name="loai-choi" id="loai-choi">
+                <option value="dulich">Du lịch</option>
+                <option value="caphe">Uống cà phê</option>
+                <option value="antoi">Ăn tối</option>
+            </select>
+            <br>
+            <button type="submit">Đăng ký vào hàng đợi</button>
+
+        </div>
+
+    </form>
+</body>
+
+<script>
+function vaohangdoi(){
+    alert("Bạn đã vào hàng đợi. Nếu được duyệt bạn sẽ nhận thông tin qua email");
+}
+</script>
+</html>
